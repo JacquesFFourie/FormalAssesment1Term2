@@ -13,9 +13,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="/css/main.css">
+    <script src="js/index.js"></script>
 
-    <title>Bootstrap Components!</title>
+    <title>Term2 Assessment</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -74,8 +74,8 @@
                 <div class="card" style="width: 100%;">
                     <img class="card-img-top" src="/images/subjects-01.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">UX Design</h5>
+                      <p class="card-text">UX Design teaches students to craft user interfaces and experiences.</p>
                       <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                   </div>
@@ -84,8 +84,8 @@
                 <div class="card" style="width: 100%;">
                     <img class="card-img-top" src="/images/subjects-03.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">Development</h5>
+                      <p class="card-text">Development teaches students how to use different programming languages.</p>
                       <a href="#" class="btn btn-danger">Read More</a>
                     </div>
                   </div>
@@ -94,8 +94,8 @@
                 <div class="card" style="width: 100%;">
                     <img class="card-img-top" src="/images/subjects-02.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">Product Design</h5>
+                      <p class="card-text">Product Design teaches students how to design user-centred physical products.</p>
                       <a href="#" class="btn btn-success">Read More</a>
                     </div>
                   </div>
@@ -105,43 +105,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <form>
+                    <form id="studentForm">
                         <h3 style="margin-top: 50px;">Sign Up</h3>
                         <p>If you would like to register for one of our courses, use the form below</p>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name & Surname">
+                            <input type="text" class="form-control" id="userNameSurname" aria-describedby="emailHelp" placeholder="Name & Surname">
                           </div>
                           <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Number">
+                            <input type="int" class="form-control" id="userNumber" aria-describedby="emailHelp" placeholder="Enter Number">
                           </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
-                        <form class="form-inline">
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select class="custom-select my-1 mr-sm-2" id="userSubject">
                               <option selected>Select a Subject</option>
-                              <option value="1">UX Design</option>
-                              <option value="2">Development</option>
-                              <option value="3">Product Design</option>
+                              <option value="UX Design">UX Design</option>
+                              <option value="Development">Development</option>
+                              <option value="Product Design">Product Design</option>
                             </select>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="margin-top: 20px;">
+                                <input type="password" class="form-control" id="userPassword" placeholder="Password" style="margin-top: 20px;">
                               </div>
                           
-                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                              <input type="checkbox" class="custom-control-input" id="customControlInline">
-                            </div>
                         <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Send me spam emails</label>
+                          <input type="checkbox" class="form-check-input" id="userBoxEmail">
+                          <label class="form-check-label" for="exampleCheck1">Send me spam Newsletters!</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary" id="submitBtn" onclick="addUser()">Submit</button>
                       </form>
                 </div>
                 
                 <div class="col-6">
                     <h3 style="margin-top: 50px;">Our Gallery</h3>
-                        <p>Take a look at some of our cool shit!</p>
+                        <p>Take a look at some of our cool stuff!</p>
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -166,4 +162,5 @@
         </div>
     </div>
   </body>
+  <footer class="container-fluid" style="background-color: #2b2b2b; text-align: center; color: white; height: 50px; margin-top: 50px;"><h2>Footer</h2></footer>
 </html>
