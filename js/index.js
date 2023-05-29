@@ -12,8 +12,8 @@ addUser = () => {
 
 
     userSignup.push({
-        userName: userNameSurname,
-        userPhoneNumber: userNumber,
+        userNameSurname: userNameSurname,
+        userNumber: userNumber,
         userEmail: userEmail,
         userSubject: userSubject,
         userPassword: userPassword
